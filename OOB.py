@@ -24,3 +24,4 @@ if __name__ == "__main__":
     sing(radek_ctx, "O sole mio!")
     zbyszek_ctx = create_person("Zbyszek")
     say(zbyszek_ctx, "Hello world!")
+    sing(radek_ctx, "O sole mio!")
