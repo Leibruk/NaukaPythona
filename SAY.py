@@ -55,5 +55,6 @@ if __name__ == '__main__':
     person_2.sing("Hello World!")
     person_2.maybe_eat(50)
     person_2.sing("Hello World!")
+    person_2.sing("Hello World!")
 
 
