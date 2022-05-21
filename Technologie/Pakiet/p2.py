@@ -1,0 +1,1 @@
+test = " To jest moduł 2 z pakietu 1"
