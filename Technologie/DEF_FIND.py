@@ -1,5 +1,4 @@
-
-lista = [1, 2, 3, 4, 5]
+test = "To jest nowa wiadomość z modułu DEF_FIND"
 
 def find(arr, el):
     if el in arr:
@@ -8,4 +7,3 @@ def find(arr, el):
     else:
         return "Element nie znajduje się w liście"
 
-print(find(lista, 3))
