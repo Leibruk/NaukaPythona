@@ -1,0 +1,33 @@
+Utwórz pakiet pythonowy: electronic_devices
+W pakiecie utwórz plik pythonowy calculator.py
+W pliku calculator.py Utwórz klasę Calculator  spełniającą wymagania:
+Utworzony obiekt kalkulator powinien posiadać stan baterii oraz pamięć ostatniego wyniku działania,
+Po każdym wykonanym działaniu poziom baterii powinien zostać pomniejszony o 1,
+Gdy poziom baterii osiągnie poziom 0 niech zostanie wywołany wyjątek NoBatteryError z wiadomością Bateria się wyczerpała! Aby dodać swój własny wyjątek wystarczy dodać klasę dziedziczącą po klasie Exception jak poniżej:
+class NoBatteryError(Exception):
+    pass
+Metoda add() - dodawanie dwóch liczb (Dla chętnych - wielu liczb)
+Metoda subtract() - odejmowanie dwóch liczb (Dla chętnych - wielu liczb)
+Metoda multiply() - mnożenie dwóch liczb (Dla chętnych- wielu liczb)
+Metoda divide() - dzielenie dwóch liczb - ma wyrzucać wyjątek ValueError jeżeli nastąpi próba dzielenia przez 0 z wiadomością Pamiętaj cholero nie dziel przez zero!
+Metoda square() - zwraca kwadrat z podanej liczby
+----------------------
+Metoda n_to_the_power_of() - zwraca liczbę podniesioną do podanej potęgi
+Metoda is_even() - zwracająca boolean czy podana liczba jest parzysta
+Metoda check_battery() - metoda sprawdzająca poziom baterii
+ 4.  Utwórz pakiet pythonowy tests
+ 5.  W pakiecie utwórz plik pythonowy test_calculator.py
+ 6.  Przetestuj całą klasę Calculator z poznanymi na zajęciach możliwościami frameworka pytest :
+@pytest.fixture()
+@pytest.mark.parametrize()
+with pytest.raises()
+ 7. Dla chętnych: Spróbuj dodać funkcjonalności do klasy Calculator które pozwalałyby na obliczenie średniej z liczb podanych w pliku txt, a następnie przetestuj tą funkcjonalnośc za pomocą mocka  (ćwiczenie BlogPost powinno być pomocne :+1:)
+
+Przykładowy plik z danymi mógłby wyglądać tak:
+
+1,2
+2,2,2
+1,1,1,5,2
+
+A metoda licząca średnie zwracałaby listę średnich wartości z każdej linii, czyli wynikiem dla powyższych danych byłoby:
+[1.5, 2.0, 2.0]

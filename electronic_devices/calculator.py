@@ -1,5 +1,24 @@
-class Calculator:
-    def __init__(self,baterie_status=100, last_result=0 ):
-        self._baterie_status = baterie_status
-        self._last_result = last_result
+from typing import Union
 
+class NoBatteryError(ValueError):
+    pass
+
+
+class Calculator:
+    def __init__(self, memory: int = 0, battery: int = 100 ):
+        self.memory = memory
+        self.battery = battery
+        self.check_battery()
+
+    def check_battery(self):
+        if self.battery <= 0:
+            raise NoBatteryError("No battery!")
+
+    def add(self,*args) -> Union[int, float]:
+        self.check_battery()
+        result = 0
+        for n in args:
+            result += n
+        self.battery -= 1
+        self.memory = result
+        return result
