@@ -1,0 +1,13 @@
+Przy użyciu techniki TDD zaimplementuj funkcję
+fizz_buzz spełniającą poniższe funkcjonalności:
+
+po podaniu 1 zwraca "1" #działa
+po podaniu 2 zwraca "2" #działa
+po podaniu 3 zwraca "Fizz" #działa
+po podaniu 4 zwraca "4"    #działa
+po podaniu 5 zwraca "Buzz" #działa
+po podaniu 6 zwraca "Fizz" (Wielokrotność 3)
+po podaniu 7 zwraca "7"
+po podaniu 8 zwraca "8"
+po podaniu 10 zwraca "Buzz" (Wielokrotność 5)
+po podaniu 15 zwraca "FizzBuzz" (Wielokrotność 3 i 5)
