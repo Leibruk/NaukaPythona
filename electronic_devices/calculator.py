@@ -22,3 +22,12 @@ class Calculator:
         self.battery -= 1
         self.memory = result
         return result
+
+    def subtract(self,*args) -> Union[int, float]:
+        self.check_battery()
+        result = args[0]
+        for n in args[1:]:
+            result -= n
+        self.battery -= 1
+        self.memory = result
+        return result
