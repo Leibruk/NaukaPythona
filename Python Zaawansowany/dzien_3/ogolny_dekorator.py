@@ -1,0 +1,4 @@
+"""
+    Ogolny dekorator
+"""
+
